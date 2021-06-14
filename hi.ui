@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="cmd_text">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>301</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_go">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>280</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mid">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>340</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mid</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_right">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_left">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>400</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stop">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>340</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_shoot">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>330</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shoot</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="sen_text">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>301</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_leftside">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>400</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Leftside</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_front">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>400</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Front</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_rightside">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>400</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rightside</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cmmand_log">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Command Log</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sensing_data">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RC Car Sensing Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_barrelLeft">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>330</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BarrelLeft</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_barrelRight">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BarrelRight</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shot_check">
+    <property name="geometry">
+     <rect>
+      <x>427</x>
+      <y>280</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_go</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedGo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mid</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedMid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedBack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedStop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_shoot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedShoot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_leftside</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>leftPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_leftside</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>leftRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>329</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_front</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>frontPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>463</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>433</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_front</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>frontRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>496</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_rightside</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rightPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_rightside</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rightRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>553</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_barrelLeft</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>barrelLeftPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>271</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_barrelRight</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>barrelRightPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>622</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_barrelLeft</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>barrelLeftRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>315</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_barrelRight</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>barrelRightRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>315</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clickedGo()</slot>
+  <slot>clickedMid()</slot>
+  <slot>clickedRight()</slot>
+  <slot>clickedLeft()</slot>
+  <slot>clickedBack()</slot>
+  <slot>clickedStop()</slot>
+  <slot>clickedShoot()</slot>
+  <slot>frontPress()</slot>
+  <slot>frontRelease()</slot>
+  <slot>rightPress()</slot>
+  <slot>rightRelease()</slot>
+  <slot>leftPress()</slot>
+  <slot>leftRelease()</slot>
+  <slot>barrelLeftPress()</slot>
+  <slot>barrelLeftRelease()</slot>
+  <slot>barrelRightPress()</slot>
+  <slot>barrelRightRelease()</slot>
+ </slots>
+</ui>
